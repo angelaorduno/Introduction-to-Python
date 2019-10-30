@@ -1,0 +1,13 @@
+# Output the following figure with asterisks. Do not add spaces after the last character in each line.
+# *****
+# *   *
+# *****
+# *   *
+# *****
+# Note: Whitespace (blank spaces / blank lines) matters; make sure your whitespace exactly matches the expected output.
+
+print('*****')
+print('*   *')
+print('*****')
+print('*   *')
+print('*****')
