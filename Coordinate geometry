@@ -1,0 +1,14 @@
+# Assign point_dist with the distance between point (x1, y1) and point (x2, y2). 
+# The calculation is: Distance = SquareRootOf( (x2 - x1)2 + (y2 - y1)2 ). 
+
+import math
+
+x1 = 1.0
+y1 = 2.0
+x2 = 1.0
+y2 = 5.0
+point_dist = 0.0
+
+point_dist = math.sqrt(math.pow((x2 - x1), 2.0) + math.pow((y2 - y1), 2.0))
+
+print('Points distance:', point_dist)
