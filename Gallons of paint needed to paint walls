@@ -1,0 +1,12 @@
+# Finish the program to compute how many gallons of paint are needed to cover the given square feet of walls.
+# Assume 1 gallon can cover 350.0 square feet.
+
+gallons_paint = 0.0
+
+wall_area = float(input())
+
+# Assign gallons_paint below
+
+gallons_paint = wall_area / 350.0
+
+print(gallons_paint)
