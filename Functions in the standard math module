@@ -1,0 +1,79 @@
+# ceil	
+# Round up value		
+
+# fabs	
+# Absolute value
+
+
+# factorial	
+# factorial (3! = 3 * 2 * 1)		
+
+# floor	
+# Round down value
+
+
+# fmod	
+# Remainder of division		
+
+# fsum	
+# Floating-point sum
+
+# exp	
+# Exponential function ex		
+
+# log	
+# Natural logarithm
+
+# pow	
+# Raise to power		
+
+# sqrt	
+# Square root
+
+# acos	
+# Arc cosine		
+
+# asin	
+# Arc sine
+
+# atan	
+# Arc tangent		
+
+# atan2	
+# Arc tangent with two parameters
+
+# cos	
+# Cosine		
+
+# sin	
+# Sine
+
+# hypot	
+# Length of vector from origin		
+
+# degrees	
+# Convert from radians to degrees
+
+# radians	
+# Convert degrees to radians		
+
+# tan	
+# Tangent
+
+# cosh	
+# Hyperbolic cosine		
+
+# sinh	
+# Hyperbolic sine
+
+# gamma	
+# Gamma function		
+
+# erf	
+# Error function
+
+# pi (constant)	
+# Mathematical constant 3.141592...
+
+# e (constant)	
+# Mathematical constant 2.718281...
