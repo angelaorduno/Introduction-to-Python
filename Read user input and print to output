@@ -1,0 +1,8 @@
+# Read three numbers from user input. 
+# Then, print the product of those numbers. 
+# Ex: If input is 2 3 5, output is 30. 
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+print(num1 * num2 * num3)
