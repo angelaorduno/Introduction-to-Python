@@ -1,4 +1,4 @@
-# Introduction-to-Python
+# Programming in Python
 
 Python Programming Elements and Syntax
 The graduate integrates Python elements including data types, constants, variables, operators, and expressions to create programming solutions.
