@@ -1,0 +1,9 @@
+# Write a function number_of_pennies() that returns the total number of pennies given a number of dollars
+# and (optionally) a number of pennies.
+
+def number_of_pennies(dollar = 0, pennies = 0):
+    pennies =  (dollar * 100) + pennies
+    return pennies
+
+print(number_of_pennies(5, 6)) # Should print 506
+print(number_of_pennies(4))    # Should print 400
