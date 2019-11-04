@@ -1,0 +1,8 @@
+# Complete the function to print the first X number of characters in the given string
+
+def printFirst(mystring, x):
+	print mystring[0:x]
+ 
+printFirst('WGU College of IT', 3)    
+ 
+printFirst('WGU College of IT', 11)
