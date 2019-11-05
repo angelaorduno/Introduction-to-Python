@@ -3,9 +3,9 @@
 def containsWGU(mystring):
 # Student code goes here
   if mystring.count('WGU') >= 1:
-    print('True')
+    return('True')
   else:
-    print('False')
+    return('False')
 
 # expected output: True
 print(containsWGU('WGU College of IT'))
