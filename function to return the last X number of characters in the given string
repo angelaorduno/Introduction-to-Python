@@ -1,8 +1,11 @@
 # Complete the function to return the last X number of characters
 # in the given string
+
+# Complete the function to return the last X number of characters
+# in the given string
 def getLast(mystring, x):
 # Student code goes here
-	print(mystring[len(mystring) - x:len(mystring)])
+	return(mystring[len(mystring) - x:len(mystring)])
  
 # expected output: IT
 print(getLast('WGU College of IT', 2))
