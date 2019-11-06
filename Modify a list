@@ -1,0 +1,8 @@
+# Modify short_names by deleting the first element and changing the last element to Joe.
+
+short_names = ['Gertrude', 'Sam', 'Ann', 'Joseph']
+
+del short_names[0]
+short_names[2] = 'Joe'
+
+print(short_names)
