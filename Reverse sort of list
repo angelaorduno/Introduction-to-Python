@@ -1,0 +1,8 @@
+# Sort short_names in reverse alphabetic order. 
+
+short_names = ['Jan', 'Sam', 'Ann', 'Joe', 'Tod']
+
+short_names.sort()
+short_names.reverse()
+
+print(short_names)
