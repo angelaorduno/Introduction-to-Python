@@ -5,18 +5,9 @@
 
 hourly_temperature = [90, 92, 94, 95]
 
-count = len(hourly_temperature)
-temperature = [ ]
-
-if count >= 0:
-  for elements  in hourly_temperature:
-     temperature.append(elements )
-     temperature.append('->')
-     count -=1
-     
-temperature.pop() 
-for x in temperature:
-  print(x,'',end='')
-  
-
-print('')
+for elements in range(len(hourly_temperature)): # for __ in __ with range(len(hourly_temperature)), your elements var will be the index. 
+    value = hourly_temperature[elements] # Then hourly_temperature[elements] gets the value.
+    if elements >= len(hourly_temperature) - 1: # Remember to use length minus one in the if.
+        print(value, end = ' \n')
+    else:
+        print(value, end = ' -> ')
