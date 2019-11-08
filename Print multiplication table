@@ -1,0 +1,21 @@
+# Print the two-dimensional list mult_table by row and column.
+# Hint: Use nested loops. 
+# Sample output for the given program:
+# 1 | 2 | 3
+# 2 | 4 | 6
+# 3 | 6 | 9
+
+mult_table = [
+    [1, 2, 3],
+    [2, 4, 6],
+    [3, 6, 9]
+]
+
+for row in mult_table:
+   x=0
+   for num in row:
+     if x<len(row)-1:
+        print(row[x],end=' | ')
+        x += 1
+     else:
+        print(row[x])
