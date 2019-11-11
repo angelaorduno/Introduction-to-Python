@@ -1,0 +1,36 @@
+'''
+Dice Statistics:
+Calculates the number of times the sum of the randomly rolled dice equals each possible value from 2 to 12
+'''
+
+import random
+
+num_rolls = int(input('Enter number of rolls:\n'))
+count = 0
+if num_rolls >= 1:
+    for i in range(num_rolls):
+        die1 = random.randint(1,6)
+        die2 = random.randint(1,6)
+        roll_total = die1 + die2
+
+        #Count number of times roll_total == value from 2 to 12
+        if roll_total == 2:
+          count += 1
+        elif roll_total == 4:
+          count += 1
+        elif roll_total == 6:
+          count += 1
+        elif roll_total == 8:
+          count += 1
+        elif roll_total == 10:
+          count += 1
+        elif roll_total == 12:
+          count += 1
+        else:
+          count += 0
+
+    print('\nDice roll statistics:')
+    print('Number of rolls: ', num_rolls)
+    print('Number of times value of roll total is between 2 and 12: ', count)
+else:
+    print('Invalid number of rolls. Try again.')
