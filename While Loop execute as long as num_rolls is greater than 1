@@ -9,15 +9,17 @@ count = 0
 total = 0
 num_rolls = int(input('Enter number of rolls:\n'))
 while num_rolls >= 1:
+  count += num_rolls
   num_rolls = int(input('Enter number of rolls:\n'))
-  count += 1
 else:
-  for i in range(count):
-    die1 = random.randint(1,6)
-    die2 = random.randint(1,6)
-    roll_total = die1 + die2
-    print('\nRoll %d total is %d' % (i+1, roll_total))
-    total += roll_total
-  print('\nDice Statistics')
-  print('Number of Rolls: %d'% count)
-  print('Total Rolls: %d' % total)
+  if count >= 1:
+      for i in range(count):
+        die1 = random.randint(1,6)
+        die2 = random.randint(1,6)
+        roll_total = die1 + die2
+        print('\nRoll %d total is %d' % (i+1, roll_total))
+        total += roll_total
+
+print('\nDice Statistics')
+print('Number of Rolls: %d'% count)
+print('Dice Total: %d' % total)
