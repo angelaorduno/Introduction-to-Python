@@ -1,0 +1,23 @@
+'''
+Dice Statistics # 2:
+Repeatedly asks the user for the number of times to roll the dice, quitting only when the user-entered number is less than 1. 
+Hint: Use a while loop that will execute as long as num_rolls is greater than 1.
+'''
+
+import random
+count = 0
+total = 0
+num_rolls = int(input('Enter number of rolls:\n'))
+while num_rolls >= 1:
+  num_rolls = int(input('Enter number of rolls:\n'))
+  count += 1
+else:
+  for i in range(count):
+    die1 = random.randint(1,6)
+    die2 = random.randint(1,6)
+    roll_total = die1 + die2
+    print('\nRoll %d total is %d' % (i+1, roll_total))
+    total += roll_total
+  print('\nDice Statistics')
+  print('Number of Rolls: %d'% count)
+  print('Total Rolls: %d' % total)
