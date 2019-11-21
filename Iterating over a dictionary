@@ -1,0 +1,30 @@
+
+# student_grades contains scores (out of 100) for 5 assignments
+student_grades = {
+    'Andrew': [56, 79, 90, 22, 50],
+    'Nisreen': [88, 62, 68, 75, 78],
+    'Alan': [95, 88, 92, 85, 85],
+    'Chang': [76, 88, 85, 82, 90],
+    'Tricia': [99, 92, 95, 89, 99]
+}
+
+
+# Print the name and grade percentage of the student 
+# with the highest total of points.
+highest_name = next(iter(student_grades))
+highest_points = sum(student_grades[highest_name])
+for name, grade in student_grades.items():
+    total_points = sum(grade)
+    if total_points > highest_points:
+        highest_name = name
+        highest_points = total_points
+print('Student' , highest_name, 'has highest score of', highest_points/500, end='\n')
+
+# Find and apply a curve to each student's total score,
+# such that the best student has 100% of the total points.
+for name, grade in student_grades.items():
+    total_points = sum(grade)
+    if total_points >= 450:
+        highest_name = name
+        highest_points = 500
+print('\nAfter curve applied to total points', highest_name, 'has score of', highest_points)
