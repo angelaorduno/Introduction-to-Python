@@ -1,0 +1,31 @@
+'''
+Complete the function to do the following:
+1. Remove the bad dictionary form the data dictionary
+2. add teh good dictionary to the data dictionary
+3. Print each Key=Value in the data dictionary (2 ways)
+'''
+def removeKeyAddKeyValue(data, bad, good):
+
+  #remove bad from data
+  for k in bad.keys():
+    if k in data:
+      del data[k]
+
+  #add good to data
+  #set d[key] to Value
+  for k in good.keys():
+    data[k] = good[k]
+  
+  #print out data
+  #1. print(data)
+  #2.
+  #for key in data:
+  #  print(key + ' = ' + data[key])
+  #3.
+  for key, value in data.items():
+    print(key, value)
+
+# test
+fruits = {'tomato': 'red', 'banana': 'yellow', 'lime':'green'}
+removeKeyAddKeyValue(fruits, {'tomato': 'red'}, {'orange':'orange'})
+#removeKeyAddKeyValue(fruits, {'orange':'orange'}, {'Plum': 'purple'})
