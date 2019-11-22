@@ -1,0 +1,19 @@
+# Find the average score of each assignment
+# student_grades contains scores (out of 100) for 5 assignments
+student_grades = {
+    'Andrew': [56, 79, 90, 22, 50],
+    'Nisreen': [88, 62, 68, 75, 78],
+    'Alan': [95, 88, 92, 85, 85],
+    'Chang': [76, 88, 85, 82, 90],
+    'Tricia': [99, 92, 95, 89, 99]
+}
+counter = 0
+t_points = []
+for name in student_grades.keys():
+  for grade in student_grades.values():
+    print(grade[counter])
+    t_points.append(grade[counter])
+  print(sum(t_points)/len(t_points))
+  t_points.clear()
+  counter += 1
+  print('Counter', counter)
